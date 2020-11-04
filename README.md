@@ -4,8 +4,10 @@
 ```
 git  clone 
 ```
-### git  clone  https://github.com/taozhi1010/myblog_pc.git
+```
+git  clone  https://github.com/taozhi1010/myblog_pc.git
 
+```
 ```
 cd  ./myblog_pc
 
