@@ -7,7 +7,17 @@ import router from './router'
 import store from './store'
 Vue.use(Antd);
 Vue.config.productionTip = false
-
+Object.assign(Vue.prototype, {
+    goBack: () => {
+        router.go(-1);
+    },
+    closePage: (index) => {
+        router.go(-index);
+    },
+    pushPath: (path) => {
+        router.push(path);
+    }
+})
 new Vue({
     router,
     store,

@@ -26,15 +26,25 @@
           slot-scope="item"
           :description="item"
           :name="item"
+        
         >
-          <a-list-item-meta :description="item">
-            <a slot="title" :href="item">{{ item }}</a>
-            <a-avatar
-              slot="avatar"
+          <div class="listItem"   @click="pushPath('details')">
+            <img
               src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+              alt=""
             />
-          </a-list-item-meta>
-          <div>Content</div>
+            <div>
+              <div>
+                <h1>Git是一个开源的分布式版本控制系统</h1>
+                <span>1111111</span>
+              </div>
+              <p>
+                Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目；Git
+                是 Linus Torvalds 为了帮助管理 L...
+              </p>
+               <span>...</span>
+            </div>
+          </div>
         </a-list-item>
       </a-list>
     </div>
@@ -104,11 +114,37 @@ export default {
   }
 }
 .container {
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
 }
-.avatar {
-  width: 50px;
-  height: 50px;
+.listItem {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+  }
+  > div {
+    text-align: left;
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-size: 16px;
+      }
+    }
+    >span{
+      display: block;
+      float: right;
+      font-size: 20px;
+    }
+  }
 }
 </style>
