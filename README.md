@@ -2,6 +2,15 @@
 
 ## Project setup
 ```
+git  clone 
+```
+### git  clone  https://github.com/taozhi1010/myblog_pc.git
+
+```
+cd  ./myblog_pc
+
+```
+```
 npm install
 ```
 
